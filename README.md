@@ -64,6 +64,7 @@ var quickSort = function (arr) {
   return quickSort(left.concat([pivot], quickSort(right)));
 }
 ```
+推荐一篇博文[http://louiszhai.github.io/2016/12/23/sort/](http://louiszhai.github.io/2016/12/23/sort/) ，里面讲了各种排序算法，还配有排序动画，非常不错
 
 
 
