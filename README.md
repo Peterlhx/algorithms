@@ -84,7 +84,7 @@ var quickSort = function (arr) {
 /*先序遍历*/
 function preOrder(node){
   if(node){
-    console.log(node.show()+' ');   /*更改这条输出语句，即可实现不同的遍历顺序*/
+    console.log(node.show()+' ');   /*将该语句与下方两条语句进行位置调换，即可实现不同的遍历顺序*/
     arguments.callee(node.left);
     arguments.callee(node.right);
   }
