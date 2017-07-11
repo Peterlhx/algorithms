@@ -48,7 +48,7 @@ calToHundred (nums, 0, symbols);
 var quickSort = function (arr) {
   var len = arr.length, 
     pivotIndex = Math.floor(len / 2), /* 找中间的一个数只是为了方便理解，基准值可以是数组中任意一个数 */
-    pivot = arr[pivotIndex];
+    pivot = arr.splice(pivotIndex, 1)[0];
   var left = [], right = [];
   if (len <= 1) {
     return;
